@@ -1,0 +1,30 @@
+@media print {
+  body {
+    background: white;
+    color: black;
+    font-family: Times New Roman, Times, serif !important;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  .prose-sm {
+    font-size: 0.75rem !important;
+  }
+
+  .prose-sm * {
+    line-height: 1.1 !important;
+  }
+
+  #me {
+    display: none !important;
+  }
+
+  /* Hide unnecessary elements for print if needed, though mostly content here */
+  @page {
+    size: a4;
+    margin: 0;
+    padding: 1.5cm; /* Standard A4 paper margin */
+  }
+}
